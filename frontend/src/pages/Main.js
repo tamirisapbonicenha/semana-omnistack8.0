@@ -9,7 +9,7 @@ import dislike from '../assets/dislike.svg';
 import like from '../assets/like.svg';
 
 export default function Main({ match }) {
-    const  [users, setUsers] = useState([]);
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
         async function loadUsers() {
