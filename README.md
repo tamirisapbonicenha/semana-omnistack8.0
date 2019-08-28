@@ -43,4 +43,20 @@ Dentro da pasta backend rode: `yarn start`
 - Dentro de mobile rode: yarn react-native run-ios.
 
 
+# RESTful API
+
+A **API** da aplicação possui três **endpoints**:
+
+
+|Method|URI|Status Code|Response|
+|-------|-------|-------|-------|
+|POST|`http://localhost:3333/api/v1/beers`|201|Beer create successfully!|
+|PUT|`http://localhost:3333/api/v1/beers/<int:beer_id>`|200|Beer update successfully!|
+|DELETE|`http://localhost:3333/api/v1/beers/<int:beer_id>`|202|Beer delete successfully!|
+
+
+#### Payloads
+
+**GET:**
+`http://localhost:3333/devs`
 
