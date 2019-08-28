@@ -49,7 +49,7 @@ A **API** da aplicação possui três **endpoints**:
 
 
 |Método|URL|Descrição|
-|-------|-------|-------|-------|
+|-------|-------|-------|
 |GET|`http://localhost:3333/devs`|Listagem de desenvolvedores desconhecidos|
 |POST|`http://localhost:3333/devs`|Cadastro de desenvolvedor|
 |POST|`http://localhost:3333/devs/:devId/likes/`|202|*Like* em um desenvolvedor|
