@@ -48,11 +48,12 @@ Dentro da pasta backend rode: `yarn start`
 A **API** da aplicação possui três **endpoints**:
 
 
-|Method|URI|Status Code|Response|
+|Método|URL|Descrição|
 |-------|-------|-------|-------|
-|POST|`http://localhost:3333/api/v1/beers`|201|Beer create successfully!|
-|PUT|`http://localhost:3333/api/v1/beers/<int:beer_id>`|200|Beer update successfully!|
-|DELETE|`http://localhost:3333/api/v1/beers/<int:beer_id>`|202|Beer delete successfully!|
+|GET|`http://localhost:3333/devs`|Listagem de desenvolvedores desconhecidos|
+|POST|`http://localhost:3333/devs`|Cadastro de desenvolvedor|
+|POST|`http://localhost:3333/devs/:devId/likes/`|202|*Like* em um desenvolvedor|
+|POST|`http://localhost:3333/devs/:devId/likes/`|202|*Dislike* em um desenvolvedor|
 
 
 #### Payloads
