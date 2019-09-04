@@ -33,18 +33,31 @@ Dentro da pasta backend rode: `yarn start`
 
 Dentro da pasta backend rode: `yarn start`
 
-
-# Para rodar o projeto.
-- Dentro da pasta backend e frontend, rode: yarn.
-
-# Para rodar o servidor.
+**Para rodar o servidor**
 - Dentro de backend rode: yarn dev.
 
-# Para rodar o frontend.
+**Para rodar o frontend**
 - Dentro de frontend rode: yarn start.
 
-# Para rodar o mobile.
+**Para rodar o mobile**
 - Dentro de mobile rode: yarn react-native run-ios.
 
 
+# RESTful API
+
+A **API** da aplicação possui três **endpoints**:
+
+
+|Método|URL|Descrição|
+|-------|-------|-------|
+|GET|`http://localhost:3333/devs`|Listagem de desenvolvedores desconhecidos|
+|POST|`http://localhost:3333/devs`|Cadastro de desenvolvedor|
+|POST|`http://localhost:3333/devs/:devId/likes/`|202|*Like* em um desenvolvedor|
+|POST|`http://localhost:3333/devs/:devId/likes/`|202|*Dislike* em um desenvolvedor|
+
+
+#### Payloads
+
+**GET:**
+`http://localhost:3333/devs`
 
