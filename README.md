@@ -1,8 +1,5 @@
-# PROJETO EM ANDAMENTO #
-
 # Tindev
-Aplicação desenvolvida na Semana OmniStack 8.0, oferecido pela Rockeseat. 
-
+Aplicação desenvolvida na Semana OmniStack 8.0, oferecido pela [Rocketseat](https://rocketseat.com.br/). 
 
 ## Sobre o projeto
 A aplicação foi desenvolvida com a proposta de ajudar desenvolvedores encontrarem outros com os mesmos interesses para trabalharem juntos. Para utilizar a aplicação o único pré requisito é ter uma conta no github e entrar com seu usuário para começar a procurar outros devs.
@@ -16,6 +13,10 @@ A aplicação foi desenvolvida com a proposta de ajudar desenvolvedores encontra
 * [Yarn](https://yarnpkg.com/pt-BR/) - Package Manager
 
 ## Preparando o ambiente
+
+### Pré requisitos
+É necessário ter o [Node.JS](https://nodejs.org) e o [Yarn](https://yarnpkg.com/lang/en/) instalados.
+
 **Clone o projeto**
 
 `git clone git@github.com:tamirisapbonicenha/semana-omnistack8.0.git`
@@ -24,23 +25,19 @@ A aplicação foi desenvolvida com a proposta de ajudar desenvolvedores encontra
 
 `.env` na raiz do projeto ou renomeie o arquivo exemplo `.env_sample` para `.env`.
 
+**Instale as dependências**
 
-**Instale as dependências do backend**
+Dentro da pasta backend e da pasta frontend, rode: `yarn dev`
 
-Dentro da pasta backend rode: `yarn start`
-
-**Instale as dependências do frontend**
-
-Dentro da pasta backend rode: `yarn start`
-
-**Para rodar o servidor**
-- Dentro de backend rode: yarn dev.
+**Para rodar o backend**
+- Dentro da pasta backend rode: `yarn dev`.
 
 **Para rodar o frontend**
-- Dentro de frontend rode: yarn start.
+- Dentro de frontend rode: `yarn start`.
 
-**Para rodar o mobile**
-- Dentro de mobile rode: yarn react-native run-ios.
+Abra o navegador em http://localhost:3000.
+
+*PS: Nessa documentação não vou cobrir como rodar a aplicação mobile devido a todas as configurações de ambiente que precisam ser feitas, dependendo se você está em um macOS, linux ou windows.*
 
 
 # RESTful API
@@ -50,14 +47,9 @@ A **API** da aplicação possui três **endpoints**:
 
 |Método|URL|Descrição|
 |-------|-------|-------|
-|GET|`http://localhost:3333/devs`|Listagem de desenvolvedores desconhecidos|
+|GET|`http://localhost:3333/devs`|Listagem de desenvolvedores|
 |POST|`http://localhost:3333/devs`|Cadastro de desenvolvedor|
 |POST|`http://localhost:3333/devs/:devId/likes/`|202|*Like* em um desenvolvedor|
 |POST|`http://localhost:3333/devs/:devId/likes/`|202|*Dislike* em um desenvolvedor|
 
-
-#### Payloads
-
-**GET:**
-`http://localhost:3333/devs`
 
